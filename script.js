@@ -1,12 +1,12 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//   const rainContainer = document.querySelector(".rain");
-
-//   for (let i = 0; i < 50; i++) {
-//       let rainDrop = document.createElement("span");
-//       rainDrop.innerText = "0 1".charAt(Math.floor(Math.random() * 2));
-//       rainDrop.className = "rain-drop";
-//       rainDrop.style.left = Math.random() * 100 + "vw";
-//       rainDrop.style.animationDuration = (Math.random() * 3 + 2) + "s";
-//       rainContainer.appendChild(rainDrop);
-//   }
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  const text = "Hey, I'm Vishnu 👋";
+  let i = 0;
+  function typeWriter() {
+      if (i < text.length) {
+          document.querySelector(".typing-effect").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
+      }
+  }
+  typeWriter();
+});
