@@ -1,132 +1,141 @@
-/* Global styles */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+/* Basic resets */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: 'Inter', sans-serif;
+  background: white;
   color: #333;
-  overflow-x: hidden;
+  line-height: 1.6;
 }
 
-/* Header Section */
-.header {
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+header {
+  background: #f1f1f1;
+  padding: 50px 20px;
   text-align: center;
-  padding: 50px 0;
-  background-color: #f8f9fa;
-  position: relative;
 }
 
-.header h1 {
-  font-size: 3rem;
-  color: #6f42c1;
-  margin: 0;
+.header-content h1 {
+  font-size: 2.5rem;
+  color: #333;
 }
 
-.header p {
+.header-content .intro {
   font-size: 1.2rem;
-  color: #777;
+  color: #666;
 }
 
-.header .social-icons {
+.social-links {
   margin-top: 20px;
 }
 
-.header .social-icons a {
-  margin: 0 15px;
-  font-size: 1.5rem;
+.link-icon {
+  font-size: 1.2rem;
+  margin-right: 15px;
   text-decoration: none;
-  color: #6f42c1;
+  color: #00A3E0;
 }
 
-/* Grid background pattern */
-.grid-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%) -50px 0,
-              linear-gradient(45deg, #f8f9fa 25%, transparent 25%) 0 50px,
-              linear-gradient(45deg, #f8f9fa 25%, transparent 25%) 50px 50px,
-              linear-gradient(45deg, #f8f9fa 25%, transparent 25%) 0 0;
-  background-size: 100px 100px;
-  z-index: -1;
+.link-icon:hover {
+  text-decoration: underline;
 }
 
-/* Section Titles */
-.section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 30px 0;
-  color: #6f42c1;
-}
-
-/* Content styles */
-.content {
-  width: 80%;
+main {
+  padding: 40px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-.experience,
-.projects,
-.skills {
-  margin-bottom: 40px;
+/* Experience */
+.job {
+  background: #F8F8F8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
-.experience ul,
-.projects ul {
+.job h3 {
+  font-size: 1.6rem;
+  color: #007ACC;
+}
+
+.job p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.job ul {
   list-style: none;
-  padding: 0;
+  margin-top: 10px;
 }
 
-.experience li,
-.projects li {
-  margin-bottom: 15px;
+.job li {
   font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 8px;
 }
 
-/* Skill items */
-.skills .skill-item {
-  display: flex;
-  align-items: center;
+/* Projects */
+.project {
+  background: #F8F8F8;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 1.6rem;
+  color: #00A3E0;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.project ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.project li {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Skills Section */
+.skills ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.skills li {
+  font-size: 1.1rem;
+  color: #444;
   margin-bottom: 10px;
 }
 
-.skills .skill-item img {
-  margin-right: 10px;
-  width: 30px;
+.skills strong {
+  color: #007ACC;
 }
 
-/* Footer styles */
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px 0;
-  background-color: #f8f9fa;
-  font-size: 1rem;
-  color: #777;
+  margin-top: 50px;
 }
 
 footer p {
-  margin: 0;
-}
-
-/* Tech Icons */
-.tech-icon {
-  width: 30px;
-}
-
-/* Add some animations or effects */
-@keyframes fadeIn {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-
-.header,
-.content,
-.footer {
-  animation: fadeIn 2s ease-in-out;
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
 }
