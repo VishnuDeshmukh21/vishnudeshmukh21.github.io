@@ -1,67 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
+/* Global styles */
 body {
-    background-color: #ffffff;
-    color: #222;
-    padding: 30px;
-    line-height: 1.6;
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('https://www.transparenttextures.com/patterns/squared-metal.png');
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  position: relative;
 }
 
-h1, h2, h3 {
-    font-weight: 600;
+.header h1 {
+  font-size: 3rem;
+  color: #6f42c1;
+  margin: 0;
 }
 
-.socials a {
-    text-decoration: none;
-    margin: 0 10px;
-    color: #222;
-    font-weight: bold;
-    font-size: 16px;
+.header p {
+  font-size: 1.2rem;
+  color: #777;
 }
 
-.socials a:hover {
-    color: #0077ff;
+.header .social-icons {
+  margin-top: 20px;
 }
 
-#education, #experience, #projects, #skills {
-    margin: 30px 0;
-    padding: 20px;
-    border-radius: 10px;
-    background: rgba(240, 240, 240, 0.7);
+.header .social-icons a {
+  margin: 0 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #6f42c1;
 }
 
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+/* Grid background pattern */
+.grid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%) -50px 0,
+              linear-gradient(45deg, #f8f9fa 25%, transparent 25%) 0 50px,
+              linear-gradient(45deg, #f8f9fa 25%, transparent 25%) 50px 50px,
+              linear-gradient(45deg, #f8f9fa 25%, transparent 25%) 0 0;
+  background-size: 100px 100px;
+  z-index: -1;
 }
 
-.skills-grid span {
-    background: #222;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 14px;
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 30px 0;
+  color: #6f42c1;
 }
 
+/* Content styles */
+.content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.experience,
+.projects,
+.skills {
+  margin-bottom: 40px;
+}
+
+.experience ul,
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience li,
+.projects li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* Skill items */
+.skills .skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skills .skill-item img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+/* Footer styles */
 footer {
-    margin-top: 30px;
-    font-size: 14px;
-    opacity: 0.7;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  color: #777;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Tech Icons */
+.tech-icon {
+  width: 30px;
+}
+
+/* Add some animations or effects */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.header,
+.content,
+.footer {
+  animation: fadeIn 2s ease-in-out;
 }
