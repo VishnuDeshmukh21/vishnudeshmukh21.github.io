@@ -11,6 +11,7 @@ body {
   background: white;
   color: #333;
   line-height: 1.6;
+  font-size: 18px;
 }
 
 h1, h2, h3 {
@@ -19,57 +20,66 @@ h1, h2, h3 {
 }
 
 header {
-  background: #f1f1f1;
-  padding: 50px 20px;
+  background: linear-gradient(135deg, #FFB6C1, #FF6347);
+  padding: 60px 20px;
   text-align: center;
+  border-bottom: 2px solid #333;
 }
 
 .header-content h1 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 3rem;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .header-content .intro {
   font-size: 1.2rem;
-  color: #666;
+  color: #FFF;
+  font-style: italic;
+  margin-top: 15px;
 }
 
 .social-links {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .link-icon {
-  font-size: 1.2rem;
-  margin-right: 15px;
+  font-size: 1.4rem;
+  margin-right: 20px;
   text-decoration: none;
-  color: #00A3E0;
+  color: #FFF;
+  font-weight: 600;
 }
 
 .link-icon:hover {
-  text-decoration: underline;
+  color: #FF6347;
 }
 
 main {
-  padding: 40px;
+  padding: 50px;
   max-width: 900px;
   margin: 0 auto;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Experience */
 .job {
-  background: #F8F8F8;
+  background: rgba(255, 99, 71, 0.1);
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .job h3 {
-  font-size: 1.6rem;
-  color: #007ACC;
+  font-size: 1.8rem;
+  color: #FF6347;
+  font-weight: 600;
 }
 
 .job p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #555;
 }
 
@@ -86,19 +96,21 @@ main {
 
 /* Projects */
 .project {
-  background: #F8F8F8;
+  background: rgba(255, 99, 71, 0.1);
   padding: 20px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-  font-size: 1.6rem;
-  color: #00A3E0;
+  font-size: 1.8rem;
+  color: #FF6347;
+  font-weight: 600;
 }
 
 .project p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #555;
 }
 
@@ -121,21 +133,22 @@ main {
 .skills li {
   font-size: 1.1rem;
   color: #444;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .skills strong {
-  color: #007ACC;
+  color: #FF6347;
 }
 
-/* Footer */
 footer {
   text-align: center;
   margin-top: 50px;
 }
 
 footer p {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.2rem;
+  color: #FF6347;
+  font-weight: 600;
   font-style: italic;
+  margin-top: 40px;
 }
